@@ -1,11 +1,12 @@
-apply plugin: 'java'
+apply plugin: 'java' //без этого не поймет, на каком языке хотим его использовать
 
-repositories {mavenCentral()}
+repositories {mavenCentral()} //указываем откуда скачать библиотеки
 
-sourceCompatibility = 1.8
+sourceCompatibility = 1.8 //похоже на совестимости, какую версию java использовать
 targetCompatibility = 1.8
 
 dependencies{
-    implementation "joda-time:joda-time:2.2"
-    testImplementation "junit:junit:4.12"
+    implementation "joda-time:joda-time:2.2" //подключение библиотеки для отображения времени
+    testImplementation "junit:junit:4.12" //необезательная строка, используется только для тестирования
 }
+
